@@ -7,4 +7,4 @@ Context vectors were used in older transformers. The encoder reads the input, an
 The context vector was replaced by attention, which solves the bottleneck issue. Instead of just sending only the last hidden state, the encoder sends all of the hidden states.
 Transfomers use self attention to decide which parts of the input are the most important. 
 
-[https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/]
+(Transformer Example)[https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/]
