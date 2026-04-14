@@ -1,3 +1,14 @@
+"""
+The following code demonstrates multi-head attention by comparing manual computation with PyTorch’s built in functions.
+
+This code generates random input data and computes query (Q), key (K), and value (V) matrices using linear projections.
+It first applies scaled dot-product attention manually and makes sure that it matches PyTorch’s built-in function.
+The internal projection weights are extracted and split into separate heads.
+Attention is computed independently for each head using scaled dot-product attention.
+The outputs of all heads are concatenated and passed through the final projection layer.
+Finally, the result is compared to PyTorch’s result.
+"""
+
 import torch
 import torch.nn
 import torch.nn.functional as F
