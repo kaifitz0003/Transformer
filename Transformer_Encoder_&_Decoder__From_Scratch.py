@@ -1,3 +1,12 @@
+"""
+The code below shows a manual Transformer Encoder and Decoder built from scratch.
+
+The architecture was copied from the Attention Is All You Need paper. The code makes an encoder and decoder 
+layer by using nn.MultiheadAttention, nn.LayerNorm, and linear layers.
+It copies the weights from Pytorches built in transformer encoder and decoder layers. The model also has self attention, cross attention, feed foward layer, and normalization layers. 
+At the end, I compared the manual results to PyTorches refernence decoder to ensure they were the same.
+"""
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
